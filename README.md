@@ -20,11 +20,12 @@
 #### Program Requirements:
 
     * The user must have Pythom 3.x version installed in their system to be able to run the code.
+      If not refer the [link](https://realpython.com/installing-python/) to download Python based on the OS.
     * User must have a command line tool like Terminal or Command Prompt to execute the Python script.
     
 #### Code Setup Steps:
 
-    * Go to the link https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test 
+    * Go to the link (https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test) 
     * Click on the green 'Code' button and download the ZIP file.
     * Once downloaded, copy the ZIP file to any specific location and unzip it.
     * The contents will include: 
@@ -39,9 +40,6 @@
     
     * Open the Terminal or Command Prompt.
     * Navigate to the directory containing Python script and sample data file using 'cd' command.
-```
-cd User/Desktop/
-```
     * Execute the below line of code by specifying points to be spend in place of <points_to_spend>
 ```
 python3 main.py <points_to_spend>
