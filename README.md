@@ -13,12 +13,15 @@
     
     * But, the accounting team does care how the points are spent. 
       There are two rules for determining what points to "spend" first: 
-      1) We want the oldest points to be spent first (based on transaction timestamp, not the order they are received) 
+      1) We want the oldest points to be spent first (based on transaction timestamp, 
+         not the order they are received) 
       2) We want no payer's points to go negative.
 
-#### Program Execution:
+#### Program Requirements:
 
-    * 
+    * The user must have Pythom 3.x version installed in their system to be able to run the code.
+    * User must have a command line tool like Terminal or Command Prompt to execute the Python script.
+    
     
     
     
