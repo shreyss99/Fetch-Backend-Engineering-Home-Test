@@ -6,7 +6,7 @@
      
     * Fetch users have points in their accounts. Users only see a single balance in their accounts. 
     * But for reporting purposes, Fetch actually track their points per payer. 
-    * In the system, each transaction record contains: payer (string), points (integer), timestamp (date). 
+    * In system, each transaction record contains: payer (string), points (integer), timestamp (date). 
     * For earning points, it is easy to assign a payer. 
     * Fetch know which actions earned the points. And which partner should be paying for the points. 
     * When a user spends points, they do nott know or care which payer the points come from. 
@@ -32,11 +32,12 @@
       2) Python script with name 'main.py'
       3) Sample data file called 'transactions.csv'
       4) requirements.txt' file.
-    * Ensure that the 'transactions.csv' file is in the same directory/path as the Python sript 'main.py'.
+    * Ensure that the 'transactions.csv' file is in the same directory/path 
+      as the Python sript 'main.py'.
     
 #### Program Execution:
     
     * Open the Terminal or Command Prompt.
-    * Navigate to the directory containing the Python script and the sample data file using the 'cd' command.
+    * Navigate to the directory containing Python script and sample data file using 'cd' command.
     * 
     
