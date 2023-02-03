@@ -24,6 +24,11 @@ def calculate_points(input_dataframe, input_points):
             input_dataframe.at[i, 'points'] -= input_dataframe.at[i, 'points']
         i += 1
 
+    final = input_dataframe.groupby('payer').sum('points')
+    result = final.reset_index()
+
+    return result
+
 
 if __name__ == '__main__':
     points_total = int(sys.argv[1])
