@@ -39,7 +39,7 @@
     
     * Open the Terminal or Command Prompt.
     * Navigate to the directory containing Python script and sample data file using 'cd' command.
-    * ```
+    ```
       python3 main.py <points_to_spend>
-      ```
+    ```
     
