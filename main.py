@@ -2,6 +2,13 @@ import sys
 import pandas as pd
 
 
+class NegativePointsException(Exception):
+    """
+    Raised when the input value is less than 0
+    """
+    print("Exception occurred: Points to spend cannot be Negative")
+
+
 def convert_file_to_dataframe(file_name):
     """
         Returns the dataframe created from the file_name specified
@@ -9,7 +16,7 @@ def convert_file_to_dataframe(file_name):
                 Parameters:
                         file_name (str): A string storing the file_name
 
-                Returns:    
+                Returns:
                         input_dataframe (DataFrame): The dataframe created from the file_name
 
     """
@@ -62,7 +69,12 @@ if __name__ == '__main__':
        Takes command line input when executing the program
        Converts it to an integer as by default command line inputs are read as strings
     '''
-    points_total = int(sys.argv[1])
+    try:
+        points_total = int(sys.argv[1])
+        if points_total < 0:
+            raise NegativePointsException
+    except NegativePointsException:
+        exit()
 
     '''
         Store the dataframe to transactions variable by passing 
