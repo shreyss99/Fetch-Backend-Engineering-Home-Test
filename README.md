@@ -22,12 +22,11 @@
     * User must have command line tool -- Terminal or Command Prompt to execute the Python script.
     * The user must have Pythom 3.x version installed in their system to be able to run the code.
       If not refer:
-  [link](https://realpython.com/installing-python/) to download Python based on the OS.
+  [Link](https://realpython.com/installing-python/) to download Python based on the OS.
     
 #### Code Setup Steps:
 
-    * Go to the: 
-   [repository](https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test) 
+  [Repository](https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test) 
     * Click on the green 'Code' button and download the ZIP file.
     * Once downloaded, copy the ZIP file to any specific location and unzip it.
     * The contents will include: 
