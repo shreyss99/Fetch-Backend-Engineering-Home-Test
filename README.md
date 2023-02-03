@@ -25,7 +25,7 @@
     
 #### Code Setup Steps:
 
-    * Go to the link (https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test) 
+    * Go to the [repository](https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test) 
     * Click on the green 'Code' button and download the ZIP file.
     * Once downloaded, copy the ZIP file to any specific location and unzip it.
     * The contents will include: 
