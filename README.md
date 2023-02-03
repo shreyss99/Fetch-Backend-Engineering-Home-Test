@@ -22,6 +22,14 @@
     * The user must have Pythom 3.x version installed in their system to be able to run the code.
     * User must have a command line tool like Terminal or Command Prompt to execute the Python script.
     
+#### Code Setup Steps:
+
+    * Go to the link https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test 
+    * Click on the green 'Code' button and download the ZIP file.
+    * Once downloaded, copy the ZIP file to any specific location and unzip it.
+    * The contents will include the README.md file (instructions), a Python script with name 'main.py', a sample data file called 'transactions.csv' and a 'requirements.txt' file.
+    * Ensure that the 'transactions.csv' file is in the same directory/path as the Python sript 'main.py'.
+    
     
     
     
