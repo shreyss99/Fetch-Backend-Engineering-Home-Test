@@ -64,8 +64,17 @@ if __name__ == '__main__':
     '''
     points_total = int(sys.argv[1])
 
+    '''
+        Store the dataframe to transactions variable by passing 
+        file name as input to the convert_file_to_dataframe() function
+    '''
     transactions = convert_file_to_dataframe("transactions.csv")
 
+    '''
+        Store the result of the computation in solution variable by passing
+        the input dataframe and the command line as inputs
+    '''
     solution = calculate_points(transactions, points_total)
 
+    '''Display the solution'''
     print(solution)
