@@ -3,7 +3,6 @@ import pandas as pd
 
 
 def convert_file_to_dataframe(file_name):
-
     """
         Returns the dataframe created from the file_name specified
 
@@ -13,7 +12,7 @@ def convert_file_to_dataframe(file_name):
                 Returns:
                         input_dataframe (DataFrame): The dataframe created from the file_name
 
-        """
+    """
 
     input_dataframe = pd.DataFrame()
     try:
@@ -24,6 +23,21 @@ def convert_file_to_dataframe(file_name):
 
 
 def calculate_points(input_dataframe, input_points):
+    """
+       Returns the dataframe consisting the points remaining grouped by payer after computation
+       based on rules:
+       1) The oldest points will be spent first
+       2) No payer's points will be negative
+
+
+               Parameters:
+                       input_dataframe (DataFrame): The dataframe containing the transactions details
+                       input_points (int): An integer containing the points to be spent
+               Returns:
+                       result (DataFrame): A dataframe consisting the points remaining grouped by payer
+
+    """
+
     sorted_dataframe = input_dataframe.sort_values(by='timestamp', ignore_index=True)
 
     i = 0
@@ -43,6 +57,11 @@ def calculate_points(input_dataframe, input_points):
 
 
 if __name__ == '__main__':
+
+    '''
+       Takes command line input when executing the program
+       Converts it to an integer as by default command line inputs are read as strings
+    '''
     points_total = int(sys.argv[1])
 
     transactions = convert_file_to_dataframe("transactions.csv")
