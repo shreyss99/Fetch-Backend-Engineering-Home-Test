@@ -42,9 +42,11 @@
 ```
 cd User/Desktop/
 ```
-    * Execute the below line of code by specifying the points to be spend in place of <points_to_spend>
+    * Execute the below line of code by specifying points to be spend in place of <points_to_spend>
 ```
 python3 main.py <points_to_spend>
 ```
-    * 
+    * The program will execute and the results will be displayed.
+    * To re-run the program with new data, the change can be made in the 'transactions.csv' file
+      and the same command command can be used to run the program with different data.
     
