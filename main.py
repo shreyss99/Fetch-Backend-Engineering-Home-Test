@@ -6,7 +6,7 @@ class NegativePointsException(Exception):
     """
     Raised when the input value is less than 0
     """
-    print("Exception occurred: Points to spend cannot be Negative")
+    pass
 
 
 def convert_file_to_dataframe(file_name):
@@ -74,6 +74,7 @@ if __name__ == '__main__':
         if points_total < 0:
             raise NegativePointsException
     except NegativePointsException:
+        print("Exception: Points to be spent cannot be negative")
         exit()
 
     '''
