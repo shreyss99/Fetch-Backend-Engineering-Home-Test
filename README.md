@@ -27,9 +27,16 @@
     * Go to the link https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test 
     * Click on the green 'Code' button and download the ZIP file.
     * Once downloaded, copy the ZIP file to any specific location and unzip it.
-    * The contents will include the README.md file (instructions), a Python script with name 'main.py', a sample data file called 'transactions.csv' and a 'requirements.txt' file.
+    * The contents will include: 
+      1) README.md file (instructions)
+      2) Python script with name 'main.py'
+      3) Sample data file called 'transactions.csv'
+      4) requirements.txt' file.
     * Ensure that the 'transactions.csv' file is in the same directory/path as the Python sript 'main.py'.
     
+#### Program Execution:
     
-    
+    * Open the Terminal or Command Prompt.
+    * Navigate to the directory containing the Python script and the sample data file using the 'cd' command.
+    * 
     
