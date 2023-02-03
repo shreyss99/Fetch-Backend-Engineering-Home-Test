@@ -12,8 +12,19 @@ def convert_file_to_dataframe(file_name):
     return input_dataframe
 
 
+def calculate_points(transactions, points_total):
+    pass
+
+
 if __name__ == '__main__':
 
     points_total = int(sys.argv[1])
+
+    transactions = convert_file_to_dataframe("transactions.csv")
+
+    solution = calculate_points(transactions, points_total)
+
+    print(solution)
+
 
 
