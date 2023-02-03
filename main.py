@@ -9,7 +9,7 @@ def convert_file_to_dataframe(file_name):
                 Parameters:
                         file_name (str): A string storing the file_name
 
-                Returns:
+                Returns:    
                         input_dataframe (DataFrame): The dataframe created from the file_name
 
     """
@@ -41,7 +41,7 @@ def calculate_points(input_dataframe, input_points):
     sorted_dataframe = input_dataframe.sort_values(by='timestamp', ignore_index=True)
 
     i = 0
-    while input_points > 0:
+    while input_points > 0 and i < len(sorted_dataframe):
         if sorted_dataframe.at[i, 'points'] > input_points:
             sorted_dataframe.at[i, 'points'] -= input_points
             break
