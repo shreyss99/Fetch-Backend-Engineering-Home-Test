@@ -39,11 +39,15 @@
     
     * Open the Terminal or Command Prompt.
     * Navigate to the directory containing Python script and sample data file using 'cd' command.
+    
     ```
     cd User/Desktop/
     ```
+    
     * Execute the below line of code by specifying the points to be spend in place of <points_to_spend>
+    
     ```
       python3 main.py <points_to_spend>
     ```
     
+    * 
