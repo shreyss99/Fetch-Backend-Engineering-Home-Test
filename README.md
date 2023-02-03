@@ -24,14 +24,14 @@
       If not refer:
   [Link](https://realpython.com/installing-python/) to download Python based on the OS.
 
-    * Ensure that the python module of pandas is installed via the command:
+    * Install the python module 'pandas' using the command via command line:
 ```
 pip3 install pandas
 ```
     
 #### Code Setup Steps:
   
-    * Go to:
+    * Go to th below link for repository cloning:
   [Repository](https://github.com/shreyss99/Fetch-Backend-Engineering-Home-Test)
     
     * Click on the green 'Code' button and download the ZIP file.
