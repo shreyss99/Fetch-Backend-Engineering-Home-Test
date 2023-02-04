@@ -26,6 +26,7 @@ def convert_file_to_dataframe(file_name):
         input_dataframe = pd.read_csv(file_name)
     except FileNotFoundError:
         print("The file {0} is not located in the current working directory".format(file_name))
+        exit()
     return input_dataframe
 
 
@@ -54,13 +55,15 @@ def calculate_points(input_dataframe, input_points):
             break
         else:
             input_points -= sorted_dataframe['points'][i]
-            sorted_dataframe.at[i, 'points'] -= sorted_dataframe.at[i, 'points']
+            sorted_dataframe.at[i, 'points'] = 0
         i += 1
 
     final = sorted_dataframe.groupby('payer').sum('points')
     result = final.reset_index()
 
-    return result
+    my_dictionary = final.to_dict()['points']
+
+    return my_dictionary
 
 
 if __name__ == '__main__':
@@ -81,7 +84,8 @@ if __name__ == '__main__':
         Store the dataframe to transactions variable by passing 
         file name as input to the convert_file_to_dataframe() function
     '''
-    transactions = convert_file_to_dataframe("transactions.csv")
+    file_name = "transactions.csv"
+    transactions = convert_file_to_dataframe(file_name)
 
     '''
         Store the result of the computation in solution variable by passing
